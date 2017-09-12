@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+	table, th, td{
+		border: 1px solid black;
+	}
+</style>
+</head>
+<body>
+
+	<table id = "mytable">
+		<tr id = "row">
+			<th><strong>N</strong></th>
+			<th><strong>10*N</strong></th>
+			<th><strong>100*N</strong></th>
+			<th><strong>1000*N</strong></th>
+		</tr>
+		<tr id = "row">
+		</tr>
+		<tr id = "row">
+		</tr>
+		<tr id = "row">
+		</tr>
+		<tr id = "row">
+		</tr>
+		<tr id = "row">
+		</tr>
+	</table>
+
+<script>
+	
+	var n = 1
+	var x = 0
+	var y = 0
+	var z = 0
+	
+	while(n < 6){
+		n = n * 1
+		x = n * 10
+		y = n * 100
+		z = n * 1000
+		
+		var a = document.createElement("TD");
+		var a2 = document.createElement("TD");
+		var a3 = document.createElement("TD");
+		var a4 = document.createElement("TD");
+		var b = document.createTextNode(n);
+		var c = document.createTextNode(x);
+		var d = document.createTextNode(y);
+		var e = document.createTextNode(z);
+		a.appendChild(b);
+		a2.appendChild(c);
+		a3.appendChild(d);
+		a4.appendChild(e);
+		var f = document.querySelectorAll("#row");
+		f[n].appendChild(a);
+		f[n].appendChild(a2);
+		f[n].appendChild(a3);
+		f[n].appendChild(a4);
+		
+		n++;
+	}
+	
+</script>	
+</body>
+</html>

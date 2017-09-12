@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+		
+	var num = [];
+	var x = 0;
+	var y = 0;
+	var total = 0;
+	
+	while(x < 10){
+		y = x + 1;
+		if(num != -1){
+			num[x] = Number(prompt("Enter a number from 1 to 100 : " + " Current input: " + y + " Press -1 to exit"))		 
+			var lnum = Math.max.apply(null, num);
+			if(num[x] > lnum){
+				document.write(num[x] + "is the new largest number!")
+			}
+		}
+		total += num[x];
+		document.write(y + ". " + num[x] + "<br />")
+		x++;
+	}
+		var mean = total / num.length;
+		
+		document.write("The mean : " + mean + "<br />")
+		document.write("The numbers inputed:" + num.length + "<br />")
+		document.write("Largest number: " + Math.max.apply(null, num))
+	
+</script>
+</body>
+</html>

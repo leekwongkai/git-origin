@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+		
+	var num = [];
+	var x = 0;
+	var y = 0;
+	
+	while(x < 10){
+		y = x + 1;
+		num[x] = Number(prompt("Enter a number : " + " Current input: " + y))
+		document.write(y + ". " + num[x] + "<br />")
+		x++;
+	}
+	
+		document.write("The numbers inputed:" + num.length + "<br />")
+		document.write("Largest number: " + Math.max.apply(null, num))
+	
+</script>
+</body>
+</html>
