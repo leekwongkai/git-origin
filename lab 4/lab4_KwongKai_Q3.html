@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+	
+	var num = [];
+	
+	for(var i = 0; i < 10; i++){
+		num[i] = Number(prompt("Enter a number"));
+		
+		if(num[i] != NaN){
+		document.write("<br>" + num[i] + " is odd? : " + isOdd(num[i]) + "<br>");
+		}
+	}
+	
+	
+	function isOdd(a){
+	
+		if(a % 2 != 0){
+			return true;
+		}
+		
+		else
+			return false;
+	}
+	
+</script>
+</body>
+</html>

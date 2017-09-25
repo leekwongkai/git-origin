@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form>
+	Enter the radius :</ br>
+	<input id="input" type="text"></ br>
+</form>
+
+<button onclick="circleArea()">Calculate</button>
+
+<script>
+	
+	function circleArea(){
+		var radius = document.getElementById("input").value;
+		var area = Math.PI * Math.pow(radius, 2);
+		
+		if (radius != NaN){
+			document.write("Area of circle : " + area);
+		}
+	}
+	
+</script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form>
+	Guess a number between 1 to 1000 : <br><input id="input">
+</form>
+
+<button onclick ="calculate()">Guess</button>
+
+<script>
+
+function calculate(){
+	var x = Number(document.getElementById("input").value);
+	var num = Math.floor(Math.random() * 1000) + 1;
+	
+	if(x == num ){
+		alert("Congratulations. You guessed the number.");
+		document.getElementById("input").value = "";
+	}
+	
+	else if(num > x ){
+		alert("Too low. Try Again.");
+		document.getElementById("input").value = "";
+	}
+	
+	else if(x > num ){
+		alert("Too high. Try Again.");
+		document.getElementById("input").value = "";
+	}
+	
+}
+	
+</script>
+</body>
+</html>

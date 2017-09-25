@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+	
+	var average = Number(prompt("Enter your average"));
+	
+	
+	document.write("Quality points: 4(100 - 90) &nbsp 3(89 - 80) &nbsp 2(79 - 70) &nbsp 1(69 - 60) &nbsp 0(59 and below)<br>")
+	document.write("Your quality point is " + qualityPoints(average));
+	
+	function qualityPoints(a){
+		
+		var point;
+		
+		if(a <= 100 && a >= 90){
+			point = 4;
+			return point;
+		}
+		
+		else if(a <= 89 && a >= 80){
+			point = 3;
+			return point;
+		}
+		
+		else if(a <= 79 && a >= 70){
+			point = 2;
+			return point;
+		}
+		
+		else if(a <= 69 && a >= 60){
+			point = 1;
+			return point;
+		}
+		
+		else
+			point = 0;
+			return point;
+	}
+	
+</script>
+</body>
+</html>

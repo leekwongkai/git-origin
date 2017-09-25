@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form>
+	Enter the radius :</ br>
+	<input id="input" type="text"></ br>
+</form>
+
+<button onclick="sphereVolume()">Calculate</button>
+
+<script>
+	
+	function sphereVolume(){
+		var radius = document.getElementById("input").value;
+		var volume = (4.0 / 3.0) * Math.PI * Math.pow(radius, 3);
+		
+		if (radius != NaN){
+			document.write("Volume of sphere : " + volume);
+		}
+	}
+	
+</script>
+</body>
+</html>
